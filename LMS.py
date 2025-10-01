@@ -504,7 +504,7 @@ def view_all_members(mycon):
         print("No members registered.")
     else:
         for member in members:
-            print(f"Member ID: {member[0]}, Name: {member[1]} {member[2]}, Email: {member[3]}, Phone: {member[4]}")
+            print(f"Member ID: {member[0]}, Name: {member[1]} {member[2]}, Email: {member[3]}, Phone: {member[5]}")
 
 def check_book_availability(mycon, book_id):
     query = "SELECT available_copies FROM Books WHERE book_id = %s"
